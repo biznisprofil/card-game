@@ -1,0 +1,30 @@
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*-----BODY -----*/
+body {
+	font-size: 16px;
+}
+
+/*----- MAIN -----*/
+main {
+	display: block;
+	min-height: 25em;
+} /* end of main area */
+
+/* Image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 15%;
+    padding: 5px;
+}
+  
+  /* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
